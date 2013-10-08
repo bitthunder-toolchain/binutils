@@ -2217,6 +2217,10 @@ earmsymbian.c: $(srcdir)/emulparams/armsymbian.sh \
   $(srcdir)/emultempl/armelf.em $(srcdir)/scripttempl/armbpabi.sc \
   ${GEN_DEPENDS}
 
+earmelf_bt.c: $(srcdir)/emulparams/armelf_bt.sh $(srcdir)/emultempl/armelf.em \
+  $(srcdir)/scripttempl/elf.sc $(ELF_DEPS) \
+  ${GEN_DEPENDS}
+
 eavr1.c: $(srcdir)/emulparams/avr1.sh $(srcdir)/emultempl/avrelf.em \
   $(ELF_DEPS) $(srcdir)/scripttempl/avr.sc \
   ${GEN_DEPENDS}
