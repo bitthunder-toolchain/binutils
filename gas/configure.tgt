@@ -152,7 +152,8 @@ case ${generic_target} in
 					fmt=coff em=wince-pe ;;
   arm-*-pe)				fmt=coff em=pe ;;
   arm-*-riscix*)			fmt=aout em=riscix ;;
-  arm-*-bt*)				fmt=elf em=armeabi ;;      
+  arm-*-bt*)				fmt=elf em=armeabi ;;
+  arm-*-bitthunder*)		fmt=elf em=armeabi ;;
 
   avr-*-*)				fmt=elf bfd_gas=yes ;;
 
