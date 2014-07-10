@@ -57,14 +57,14 @@ tgetstr (char *name, char **area)
   return NULL;
 }
 
-int
+/*int
 tputs (char *string, int nlines, int (*outfun) ())
 {
   while (*string)
     outfun (*string++);
 
   return 0;
-}
+}*/
 
 char *
 tgoto (const char *cap, int col, int row)
